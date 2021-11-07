@@ -32,7 +32,8 @@ void initialize(TetrisOneGameState& tetris)
 	for (int i = 0; i < NEXT_NUM; ++i)
 		circulateNext(tetris.next, tetris.bag);
 
-	// ƒJƒŒƒ“ƒg
+	// ƒJƒŒƒ“ƒgƒ~ƒm
+	// ‰Šúó‘Ô‚ÍÀ•W‚Æ‚©Œü‚«‚Æ‚©‚ÌŠT”O‚ÍŽ‚½‚È‚¢
 	tetris.current = {MinoType::EMPTY};
 }
 
@@ -109,8 +110,6 @@ bool setCurrentStartPos(ConstTetris::Board& board, CurrentMinoState& current)
 
 bool moveRight(Board& board, CurrentMinoState& current)
 {
-	const auto& shape = getMinoShape(current.type, current.dir);
-
 	++current.x;
 
 	if (!canPut(board, current))
@@ -126,8 +125,6 @@ bool moveRight(Board& board, CurrentMinoState& current)
 
 bool moveLeft(Board& board, CurrentMinoState& current)
 {
-	const auto& shape = getMinoShape(current.type, current.dir);
-
 	--current.x;
 
 	if (!canPut(board, current))
@@ -143,8 +140,6 @@ bool moveLeft(Board& board, CurrentMinoState& current)
 
 bool moveDown(Board& board, CurrentMinoState& current)
 {
-	const auto& shape = getMinoShape(current.type, current.dir);
-
 	--current.y;
 
 	if (!canPut(board, current))
@@ -170,8 +165,6 @@ int rotateRight(Board& board, CurrentMinoState& current)
 {
 	current.dir = DirRight(current.dir);
 
-	const auto& shape = getMinoShape(current.type, current.dir);
-
 	if (!canPut(board, current))
 	{
 		current.dir = DirLeft(current.dir);
@@ -186,8 +179,6 @@ int rotateRight(Board& board, CurrentMinoState& current)
 int rotateLeft(Board& board, CurrentMinoState& current)
 {
 	current.dir = DirLeft(current.dir);
-
-	const auto& shape = getMinoShape(current.type, current.dir);
 
 	if (!canPut(board, current))
 	{

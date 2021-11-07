@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main Files">
+      <UniqueIdentifier>{fd731636-a502-4fae-81a3-19a5232ade8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Constant">
+      <UniqueIdentifier>{d837f28c-e7ea-4ff1-92ac-8939bd628ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Paint">
+      <UniqueIdentifier>{6e926734-fca8-4b93-a6ea-236b3a795216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tetris">
+      <UniqueIdentifier>{ea7767b5-e1d2-44ea-8899-5de432e87524}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaintTetris.cpp">
+      <Filter>Paint</Filter>
+    </ClCompile>
+    <ClCompile Include="OnException.cpp">
+      <Filter>Main Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrisFunction.cpp">
+      <Filter>Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrisOneGameOperator.cpp">
+      <Filter>Tetris</Filter>
+    </ClCompile>
+    <ClCompile Include="TetrisInputProc.cpp">
+      <Filter>Tetris</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConstScreenLayout.h">
+      <Filter>Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstTetris.h">
+      <Filter>Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="PaintTetris.h">
+      <Filter>Paint</Filter>
+    </ClInclude>
+    <ClInclude Include="OnException.h">
+      <Filter>Main Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisFunction.h">
+      <Filter>Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisOneGameState.h">
+      <Filter>Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="CurrentMinoState.h">
+      <Filter>Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisOneGameOperator.h">
+      <Filter>Tetris</Filter>
+    </ClInclude>
+    <ClInclude Include="TetrisInputProc.h">
+      <Filter>Tetris</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
